@@ -4,25 +4,25 @@
 #include <iostream>
 #include <string>
 
-struct TreeNode {
+struct Arbol {
     std::string data;
-    TreeNode* left;
-    TreeNode* right;
+    Arbol* left;
+    Arbol* right;
 
-    TreeNode(std::string value) : data(value), left(nullptr), right(nullptr) {}
+    Arbol(std::string valor) : data(valor), left(nullptr), right(nullptr) {}
 };
 
-class BinaryTree {
+class ArbolBinario {
 private:
-    TreeNode* root;
+    Arbol* root;
 
-    void insert(TreeNode*& node, std::string value);
-    void traverseInOrder(TreeNode* node);
-    void printTree(TreeNode* node, std::string prefix = "", bool isLeft = false);
+    void insert(Arbol*& nodo, std::string valor);
+    void inOrden(Arbol* nodo);
+    void printTree(Arbol* nodo, std::string prefix = "", bool isLeft = false);
 
 public:
-    BinaryTree();
-    void insert(std::string value);
+    ArbolBinario();
+    void insert(std::string valor);
     void displayInOrder();
     void buscarPalabra(std::string palabra);
     void printTree();

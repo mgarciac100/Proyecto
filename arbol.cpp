@@ -1,10 +1,10 @@
 #include "arbol.h"
 
-BinaryTree::BinaryTree() : root(nullptr) {}
+ArbolBinario::ArbolBinario() : root(nullptr) {}
 
-void BinaryTree::insert(TreeNode*& node, std::string value) {
+void ArbolBinario::insert(Arbol*& node, std::string value) {
     if (node == nullptr) {
-        node = new TreeNode(value);
+        node = new Arbol(value);
     } else if (value < node->data) {
         insert(node->left, value);
     } else {
@@ -12,15 +12,15 @@ void BinaryTree::insert(TreeNode*& node, std::string value) {
     }
 }
 
-void BinaryTree::traverseInOrder(TreeNode* node) {
+void ArbolBinario::inOrden(Arbol* node) {
     if (node != nullptr) {
-        traverseInOrder(node->left);
+        inOrden(node->left);
         std::cout << node->data << " ";
-        traverseInOrder(node->right);
+        inOrden(node->right);
     }
 }
 
-void BinaryTree::printTree(TreeNode* node, std::string prefix, bool isLeft) {
+void ArbolBinario::printTree(Arbol* node, std::string prefix, bool isLeft) {
     if (node != nullptr) {
         std::cout << (isLeft ? "/" : "\\");
         std::cout << node->data << std::endl;
@@ -30,20 +30,20 @@ void BinaryTree::printTree(TreeNode* node, std::string prefix, bool isLeft) {
     }
 }
 
-void BinaryTree::insert(std::string value) {
+void ArbolBinario::insert(std::string value) {
     insert(root, value);
 }
 
-void BinaryTree::displayInOrder() {
-    traverseInOrder(root);
+void ArbolBinario::displayInOrder() {
+    inOrden(root);
     std::cout << std::endl;
 }
 
-void BinaryTree::buscarPalabra(std::string palabra) {
-    TreeNode* current = root;
+void ArbolBinario::buscarPalabra(std::string palabra) {
+    Arbol* current = root;
     while (current != nullptr) {
         if (current->data == palabra) {
-            std::cout << "Palabra encontrada" << std::endl;
+            std::cout << palabra << " fue encontrada" << std::endl;
             return;
         } else if (palabra < current->data) {
             current = current->left;
@@ -54,6 +54,6 @@ void BinaryTree::buscarPalabra(std::string palabra) {
     std::cout << "Palabra no encontrada" << std::endl;
 }
 
-void BinaryTree::printTree() {
+void ArbolBinario::printTree() {
     printTree(root);
 }

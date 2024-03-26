@@ -2,7 +2,7 @@
 #include "arbol.h"
 
 int main() {
-    BinaryTree tree;
+    ArbolBinario tree;
 
     // Insertar palabras en el árbol
     tree.insert("perro");
