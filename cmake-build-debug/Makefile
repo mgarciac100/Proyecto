@@ -128,6 +128,78 @@ Proyecto/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/build
 .PHONY : Proyecto/fast
 
+arbol.obj: arbol.cpp.obj
+.PHONY : arbol.obj
+
+# target to build an object file
+arbol.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/arbol.cpp.obj
+.PHONY : arbol.cpp.obj
+
+arbol.i: arbol.cpp.i
+.PHONY : arbol.i
+
+# target to preprocess a source file
+arbol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/arbol.cpp.i
+.PHONY : arbol.cpp.i
+
+arbol.s: arbol.cpp.s
+.PHONY : arbol.s
+
+# target to generate assembly for a file
+arbol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/arbol.cpp.s
+.PHONY : arbol.cpp.s
+
+arbolAvl.obj: arbolAvl.cpp.obj
+.PHONY : arbolAvl.obj
+
+# target to build an object file
+arbolAvl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/arbolAvl.cpp.obj
+.PHONY : arbolAvl.cpp.obj
+
+arbolAvl.i: arbolAvl.cpp.i
+.PHONY : arbolAvl.i
+
+# target to preprocess a source file
+arbolAvl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/arbolAvl.cpp.i
+.PHONY : arbolAvl.cpp.i
+
+arbolAvl.s: arbolAvl.cpp.s
+.PHONY : arbolAvl.s
+
+# target to generate assembly for a file
+arbolAvl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/arbolAvl.cpp.s
+.PHONY : arbolAvl.cpp.s
+
+curl_helper.obj: curl_helper.cpp.obj
+.PHONY : curl_helper.obj
+
+# target to build an object file
+curl_helper.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/curl_helper.cpp.obj
+.PHONY : curl_helper.cpp.obj
+
+curl_helper.i: curl_helper.cpp.i
+.PHONY : curl_helper.i
+
+# target to preprocess a source file
+curl_helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/curl_helper.cpp.i
+.PHONY : curl_helper.cpp.i
+
+curl_helper.s: curl_helper.cpp.s
+.PHONY : curl_helper.s
+
+# target to generate assembly for a file
+curl_helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto.dir\build.make CMakeFiles/Proyecto.dir/curl_helper.cpp.s
+.PHONY : curl_helper.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +233,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Proyecto
+	@echo ... arbol.obj
+	@echo ... arbol.i
+	@echo ... arbol.s
+	@echo ... arbolAvl.obj
+	@echo ... arbolAvl.i
+	@echo ... arbolAvl.s
+	@echo ... curl_helper.obj
+	@echo ... curl_helper.i
+	@echo ... curl_helper.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
